@@ -5,7 +5,7 @@ server:
 logging:
   level:
     root: info
-    org.springframework.boot.web: debug
+    org.springframework.boot.web: info
 
 spring:
   # jconsole admin
@@ -16,8 +16,32 @@ spring:
   devtools:
     livereload:
       enabled: true
+  # Log Color
+  output:
+    ansi:
+      enabled: always
 
+---
 
+spring:
+  profiles:
+    active: "dev"
+service:
+  message :
+    text : "hello"
+---
+
+spring:
+  profiles: "dev"
 service:
   message:
-    text: "hello"
+    type : "simple"
+    text : "hi"
+---
+
+spring:
+  profiles: "prod"
+service:
+  message:
+    type: "advance"
+    text: "welcome"
