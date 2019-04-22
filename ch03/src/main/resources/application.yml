@@ -1,0 +1,22 @@
+server:
+  port: 9093
+
+# 로깅
+logging:
+  level:
+    root: info
+    org.springframework.boot.web: info
+
+spring:
+  # jconsole admin
+  application:
+    admin:
+      enabled: true
+  # Live Reload
+  devtools:
+    livereload:
+      enabled: true
+  # Log Color
+  output:
+    ansi:
+      enabled: always
