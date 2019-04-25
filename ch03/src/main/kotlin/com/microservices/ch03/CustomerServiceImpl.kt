@@ -2,6 +2,7 @@ package com.microservices.ch03
 
 import org.springframework.stereotype.Component
 import java.util.concurrent.ConcurrentHashMap
+import com.microservices.ch03.Customer.Telephone
 
 @Component
 class CustomerServiceImpl : CustomerService {
@@ -9,7 +10,7 @@ class CustomerServiceImpl : CustomerService {
     companion object {
         val initialCustomers = arrayOf(Customer(1, "Kotlin"),
                 Customer(2, "Spring"),
-                Customer(3, "Microservice"))
+                Customer(3, "Microservice", Telephone("+44", "7123456789")))
     }
 
     val customers = ConcurrentHashMap<Int,Customer>(initialCustomers.associateBy(Customer::id))
