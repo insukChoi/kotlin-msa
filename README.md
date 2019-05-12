@@ -25,3 +25,7 @@
 [Spring Boot Reference Guide](https://docs.spring.io/spring-boot/docs/current/reference/html)
 
 [Kotlin Reference Guide](https://kotlinlang.org/docs/reference/)
+
+[Docker Hub - mongo](https://hub.docker.com/_/mongo/)
+
+[Mongo db Manual](https://docs.mongodb.com/manual/)
