@@ -1,0 +1,32 @@
+server:
+  port: 9095
+
+# 로깅
+logging:
+  level:
+    root: info
+    org.springframework.boot.web: info
+
+spring:
+  # jconsole admin
+  application:
+    admin:
+      enabled: true
+  # Live Reload
+  devtools:
+    livereload:
+      enabled: true
+  # Log Color
+  output:
+    ansi:
+      enabled: always
+  jackson:
+    default-property-inclusion: non_null
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: "microservices"
+      username: root
+      password: root
+      authentication-database: admin
