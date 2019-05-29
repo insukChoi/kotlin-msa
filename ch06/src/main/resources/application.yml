@@ -5,6 +5,7 @@ server:
 spring:
   # jconsole admin
   application:
+    name: "greetings"
     admin:
       enabled: true
   # Live Reload
