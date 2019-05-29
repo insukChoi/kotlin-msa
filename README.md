@@ -31,3 +31,5 @@
 [Mongo db Manual](https://docs.mongodb.com/manual/)
 
 [Spring Cloud](https://spring.io/projects/spring-cloud)
+
+[Spring Boot Actuator Reference](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-monitoring.html)
