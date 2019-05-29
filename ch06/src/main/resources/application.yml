@@ -18,3 +18,8 @@ spring:
       enabled: always
   jackson:
     default-property-inclusion: non_null
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
