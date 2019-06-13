@@ -1,0 +1,6 @@
+server:
+  port: 9099
+
+logging:
+  level:
+    org.springframework.web: info
