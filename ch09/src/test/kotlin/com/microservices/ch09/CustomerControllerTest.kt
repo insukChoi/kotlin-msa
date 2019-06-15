@@ -60,7 +60,7 @@ class CustomerControllerTest{
         (mockMvc `do a get request to` "/customer/1"
                 `and expect` (That `status is http` 200)
                 `and expect` (With `json path` ".id" `that the value is` 1)
-                `and expect` (With `json path` ".name" `that the value is` "mock cutomer")
+                `and expect` (With `json path` ".name" `that the value is` "mock customer")
                 ) `and then do` print()
         /*mockMvc.perform(get("/customer/1"))
                 .andExpect(status().isOk)
@@ -83,7 +83,7 @@ class CustomerControllerTest{
         /*given(customerSevice.getAllCustomers())
                 .willReturn(listOf(Customer(1, "test"), Customer(2, "mocks")))*/
 
-        (mockMvc `do a get request to` "/Customers"
+        (mockMvc `do a get request to` "/customers"
                 `and expect` (That `status is http` 200)
                 `and expect` (With `json path` "[0].id" `that the value is` 1)
                 `and expect` (With `json path` "[0].name" `that the value is` "test")
