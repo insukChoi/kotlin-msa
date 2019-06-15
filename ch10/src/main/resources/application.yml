@@ -1,0 +1,13 @@
+server:
+  port: 9100
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, metrics, trace
+  endpoint:
+    health:
+      show-details: always
+  server:
+    port: 9101
