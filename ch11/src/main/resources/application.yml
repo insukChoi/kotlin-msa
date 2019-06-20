@@ -1,0 +1,6 @@
+server:
+  port: 9011
+
+logging:
+  level:
+    org.springframework.web: info
